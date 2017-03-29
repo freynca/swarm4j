@@ -164,7 +164,7 @@ public class HostTest {
         Duck dewey = host.get(new Spec("/Duck"));
         dewey.set(new JSONValue(Collections.singletonMap("age", new JSONValue(2))));
         JSONValue json = dewey.getPOJO(false);
-        assertEquals("{\"height\":null,\"age\":2,\"mood\":\"neutral\"}", json.toJSONString());
+        assertEquals("{\"mood\":\"neutral\",\"age\":2,\"height\":null}", json.toJSONString());
     }
 
     /* TODO reactions

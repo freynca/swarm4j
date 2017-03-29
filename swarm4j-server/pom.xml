@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <properties>
-        <spring.version>0.5.0.M4</spring.version>
+        <spring.version>1.5.2.RELEASE</spring.version>
     </properties>
 
     <artifactId>swarm4j-server</artifactId>
@@ -43,12 +43,12 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
-            <version>4.0.0.M3</version>
+            <version>4.3.7.RELEASE</version>
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-instrument</artifactId>
-            <version>3.2.4.RELEASE</version>
+            <version>4.3.7.RELEASE</version>
         </dependency>
     </dependencies>
 
@@ -61,7 +61,7 @@
             </plugin>
         </plugins>
     </build>
-
+<!--
     <repositories>
         <repository>
             <id>spring-snapshots</id>
@@ -77,4 +77,5 @@
             <snapshots><enabled>true</enabled></snapshots>
         </pluginRepository>
     </pluginRepositories>
+  -->
 </project>

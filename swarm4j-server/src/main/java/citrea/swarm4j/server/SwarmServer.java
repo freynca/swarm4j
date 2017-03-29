@@ -22,9 +22,6 @@ import java.net.UnknownHostException;
 public class SwarmServer {
     public final Logger logger = LoggerFactory.getLogger(SwarmServer.class.getName());
 
-    @Autowired
-    private Utils utils;
-
     @Value("${port:8080}")
     private int port;
 
@@ -53,7 +50,7 @@ public class SwarmServer {
             throw new RuntimeException("'host' property not deliver");
         }
         host.start();
-        wsServer = new WSServerImpl(port, decoders, host, utils);
+        wsServer = new WSServerImpl(port, decoders, host, new Utils());
         wsServer.start();
         logger.info("started on port: " + port);
     }
